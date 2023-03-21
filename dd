@@ -1,0 +1,9 @@
+player = {
+    "Status" : "ACTIVE",
+    "balance" : 10,
+    "localize" :{
+        "en" : {"name" : "nick"},
+        "ru" : {"name": "ник"}
+    },
+    "avatar" : "https://www.google.com/"
+}
