@@ -1,11 +1,11 @@
 from src.enums.user_enums import Status
 from src.generator.player_locale import Locale
+from src.base_class.builder import BilderBaseClass
 
-
-class Player():
+class Player(BilderBaseClass):
 
     def __init__(self):
-        self.result = {}
+        super().__init__()
         self.reset()
 
     def set_status(self, status=Status.ACTIVE.value):
@@ -30,18 +30,6 @@ class Player():
         }
         return self
 
-    def build(self):
-        return self.result
 
-    def update_inner_value(self, key, value):
-        if not isinstance(key, list):
-            self.result[key] = value
-        else:
-            temp = self.result
-            for item in key[:-1]:
-                if item not in temp.keys():
-                    temp[item] = {}
-                temp = temp[item]
-            temp[key[-1]] = value
-        return self
+
 
