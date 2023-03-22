@@ -2,7 +2,7 @@ player = {
     "Status" : "ACTIVE",
     "balance" : 10,
     "localize" :{
-        "en" : {"name" : "nick"},
+        "en" : {"name" : "nick", 'country': 'US'},
         "ru" : {"name": "ник"}
     },
     "avatar" : "https://www.google.com/"

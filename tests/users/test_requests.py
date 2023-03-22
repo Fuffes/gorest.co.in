@@ -13,10 +13,6 @@ def test_get_users(get_users):
 
 @pytest.mark.skip('not to be tested')
 def test_another():
-    '''
-
-
-    '''
     assert 1 == 1
 
 
@@ -41,3 +37,4 @@ def test_another2(calc):
 
 def test_failed():
     assert 1 == 2
+
